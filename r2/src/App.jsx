@@ -2,6 +2,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Create from './Components/Create';
 import { GlobalProvider } from './Components/Global';
 import List from './Components/List';
+import ModalDelete from './Components/ModalDelete';
+import ModalAdd from './Components/ModalAdd';
+import ModalRem from './Components/ModalRem';
+import Messages from './Components/Messages';
 
 function App() {
   return (
@@ -16,6 +20,10 @@ function App() {
           </div>
         </div>
       </div>
+      <ModalDelete />
+      <ModalAdd />
+      <ModalRem />
+      <Messages />
     </GlobalProvider>
   );
 }
